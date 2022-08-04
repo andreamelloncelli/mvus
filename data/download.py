@@ -9,13 +9,6 @@ detection_dir = data_dir / "dataset4" / "detections"
 github_root_url = Path("raw.githubusercontent.com/CenekAlbl/drone-tracking-datasets/master/")
 
 relative_path_ls = [Path(path) for path in [
-    "calibration/gopro3/gopro3.json",
-    "calibration/iphone6/iphone6.json",
-    "calibration/mate10/mate10_1.json",
-    "calibration/mate7/mate7.json",
-    "calibration/mi9/mi9.json",
-    "calibration/p20pro/p20pro.json",
-    # used
     "calibration/mate7/mate7.json",
     "calibration/mate10/mate10_2.json",
     "calibration/gopro3/gopro3.json",
