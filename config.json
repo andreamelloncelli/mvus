@@ -6,14 +6,36 @@
         "Further instruction goes here..."
     ],
 
-    
+
     "necessary inputs":
     {
-        "path_detections": [],
-
-        "path_cameras": [],
-                    
-        "corresponding_frames":[]
+        "path_detections": [
+            "data/drone-tracking-datasets/dataset4/detections/cam2.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam3.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam0.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam1.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam4.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam5.txt",
+            "data/drone-tracking-datasets/dataset4/detections/cam6.txt"
+        ],
+        "path_cameras": [
+            "data/drone-tracking-datasets/calibration/mate7/mate7.json",
+            "data/drone-tracking-datasets/calibration/mate10/mate10_2.json",
+            "data/drone-tracking-datasets/calibration/gopro3/gopro3.json",
+            "data/drone-tracking-datasets/calibration/p20pro/p20pro.json",
+            "data/drone-tracking-datasets/calibration/sony5100/sony5100.json",
+            "data/drone-tracking-datasets/calibration/sonyG/sonyG_2.json",
+            "data/drone-tracking-datasets/calibration/sony5n_1440x1080/sony5n_1440x1080.json"
+        ],
+        "corresponding_frames": [
+            0,
+            92,
+            -2255,
+            32,
+            -238,
+            1136,
+            -2502
+        ]
     },
 
 
