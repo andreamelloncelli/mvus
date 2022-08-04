@@ -1,0 +1,51 @@
+{
+    "comments":
+    [
+        "This is the templete for configure a dataset for the pipeline.",
+
+        "Further instruction goes here..."
+    ],
+
+    
+    "necessary inputs":
+    {
+        "path_detections": [],
+
+        "path_cameras": [],
+                    
+        "corresponding_frames":[]
+    },
+
+
+    "optional inputs":
+    {
+        "ground_truth": {"filepath":"", "frequency":1}
+    },
+
+
+    "settings":
+    {
+        "num_detections": 100000,
+        "opt_calib": false,
+        "cf_exact":true,
+        "sync_method":"iter",
+        "undist_points": true,
+        "rolling_shutter": false,
+        "init_rs": 1,
+        "rs_bounds":false,
+        "motion_prior":false,
+        "motion_reg":false,
+        "motion_weights":100,
+        "cut_detection_second": 0.5,
+        "camera_sequence": [],
+        "ref_cam": 0,
+        "thres_Fmatix": 30,
+        "thres_PnP": 30,
+        "thres_outlier": 10,
+        "thres_triangulation": 20,
+        "smooth_factor": [20,25],
+        "sampling_rate": 0.5,
+        "path_output": ""
+    }
+
+}
