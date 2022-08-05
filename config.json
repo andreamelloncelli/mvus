@@ -1,14 +1,9 @@
 {
-    "comments":
-    [
-        "This is the templete for configure a dataset for the pipeline.",
-
-        "Further instruction goes here..."
+    "comments": [
+        "betas: Sony G: 3516",
+        " Mate 10: 0 "
     ],
-
-
-    "necessary inputs":
-    {
+    "necessary inputs": {
         "path_detections": [
             "data/drone-tracking-datasets/dataset4/detections/cam2.txt",
             "data/drone-tracking-datasets/dataset4/detections/cam3.txt",
@@ -37,27 +32,31 @@
             -2502
         ]
     },
-
-
-    "optional inputs":
-    {
-        "ground_truth": {"filepath":"", "frequency":1}
+    "optional inputs": {
+        "ground_truth": {
+            "filepath": "data/drone-tracking-datasets/dataset4/trajectory/rtk.txt",
+            "frequency": 5
+        }
     },
-
-
-    "settings":
-    {
+    "settings": {
         "num_detections": 100000,
         "opt_calib": false,
-        "cf_exact":true,
-        "sync_method":"iter",
+        "cf_exact": true,
         "undist_points": true,
-        "rolling_shutter": false,
-        "init_rs": 1,
-        "rs_bounds":false,
-        "motion_prior":false,
-        "motion_reg":false,
-        "motion_weights":100,
+        "rolling_shutter": true,
+        "init_rs": [
+            0.6,
+            0.75,
+            0.5,
+            0.1,
+            0.1,
+            0.1,
+            0.1
+        ],
+        "motion_type": "F",
+        "motion_reg": true,
+        "motion_weights": 1e4,
+        "rs_bounds": false,
         "cut_detection_second": 0.5,
         "camera_sequence": [],
         "ref_cam": 0,
@@ -65,9 +64,11 @@
         "thres_PnP": 30,
         "thres_outlier": 10,
         "thres_triangulation": 20,
-        "smooth_factor": [20,25],
+        "smooth_factor": [
+            10,
+            20
+        ],
         "sampling_rate": 0.5,
-        "path_output": ""
+        "path_output": "data/drone-tracking-datasets/dataset4/result_f_rs.pkl"
     }
-
 }
